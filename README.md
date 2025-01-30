@@ -326,24 +326,18 @@ json
 | errorAlert, toastMessage, showToast | Gerenciam mensagens de erro e notificações exibidas ao usuário. |
 | loading              | Controla o estado de carregamento, exibindo uma mensagem durante operações. |
 
-3.3. Funcionalidades Principais
-handleConnectClick: Conecta-se ao banco de dados selecionado e carrega as tabelas disponíveis.
+### 3.3. Funcionalidades Principais
 
-handleSelectTable: Busca as colunas da tabela selecionada.
+-   handleConnectClick: Conecta-se ao banco de dados selecionado e carrega as tabelas disponíveis.
+-   handleSelectTable: Busca as colunas da tabela selecionada.
+-   handleSelectValue: Obtém os valores disponíveis na coluna selecionada.
+-   getDataTable: Realiza uma consulta com base nas seleções do usuário e exibe os dados na tabela.
 
-handleSelectValue: Obtém os valores disponíveis na coluna selecionada.
-
-getDataTable: Realiza uma consulta com base nas seleções do usuário e exibe os dados na tabela.
-
-3.4. Interface do Usuário
+### 3.4. Interface do Usuário
 O componente renderiza uma interface intuitiva com:
 
-Seletores: Para escolher banco de dados, tabelas, colunas e valores.
-
-Botões: "Connect" para conectar ao banco de dados e "Get Data" para buscar os dados.
-
-Tabela Interativa: Exibe os dados retornados usando ReactTabulator.
-
-Estatísticas: Mostra o total de dados, passos/falhas, maior/menor valor e média.
-
-Notificações: Mensagens de erro ou sucesso são exibidas usando IonToast.
+-   Seletores: Para escolher banco de dados, tabelas, colunas e valores.
+-   Botões: "Connect" para conectar ao banco de dados e "Get Data" para buscar os dados.
+-   Tabela Interativa: Exibe os dados retornados usando ReactTabulator.
+-   Estatísticas: Mostra o total de dados, passos/falhas, maior/menor valor e média.
+-   Notificações: Mensagens de erro ou sucesso são exibidas usando IonToast.
